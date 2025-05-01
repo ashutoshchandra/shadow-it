@@ -5,3 +5,11 @@ Unmanaged Shadow IT applications in the cloud pose significant security, complia
 
 Shadow IT refers to the use of information technology systems, devices, software, applications, and services without explicit organizational approval. In the context of Software as a Service (SaaS) applications, Shadow IT presents unique challenges and risks, including data breaches, compliance violations, and increased vulnerability to cyber threats:
 
+
+proxy/firewall logs → user_activity_parser
+                            ↓
+              domains → saas_identifier
+                            ↓
+       user-domain pairs → dashboard_reporter
+                            ↓
+        risky domains → notifier + persistence
