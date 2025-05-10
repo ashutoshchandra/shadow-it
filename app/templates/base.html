@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Shadow IT Monitoring Dashboard Proof of Concept">
+    <title>{% block title %}Shadow IT Dashboard{% endblock %}</title>
+    <!-- Bootstrap CSS -->
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+     <!-- Optional: Add FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"> {# Added sticky-top #}
+        <div class="container-fluid">
+             <a class="navbar-brand" href="{{ url_for('main.dashboard') }}"><i class="fas fa-user-secret me-2"></i>Shadow IT Monitor</a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{ url_for('main.dashboard') }}"><i class="fas fa-tachometer-alt me-1"></i>Dashboard</a>
+                    </li>
+                     <!-- Add other sections like Reporting, Configuration later -->
+                </ul>
+                 <span class="navbar-text me-3" id="last-updated">
+                     Loading...
+                 </span>
+                {# Placeholder for user info or settings later #}
+            </div>
+        </div>
+    </nav>
+
+    {# Area for global status messages - populated by JS #}
+     <div id="status-message-container" class="container-fluid mt-2" style="min-height: 50px;"></div>
+
+    <main class="container-fluid mt-3"> {# Reduced top margin #}
+        {% block content %}
+        <!-- Page specific content will go here -->
+        {% endblock %}
+     </main>
+
+    <footer class="text-center mt-5 mb-3 text-muted">
+        <small>Shadow IT Monitoring PoC v2.0</small>
+     </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+     <!-- Chart.js -->
+    <script src="{{ url_for('static', filename='vendor/chart.js/Chart.min.js') }}"></script>
+     <!-- Optional: Moment.js for date formatting in charts -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <!-- Custom JS - Deferred to load after DOM -->
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}" defer></script>
+    {% block scripts %}
+    <!-- Page specific scripts -->
+    {% endblock %}
+ </body>
+</html>

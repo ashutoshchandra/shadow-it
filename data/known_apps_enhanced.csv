@@ -1,0 +1,18 @@
+domain,app_name,category,status,compliance_gdpr,compliance_hipaa,known_breach,inherent_risk_score,expense_keywords
+corp-portal.com,Corporate Intranet,Internal,sanctioned,True,True,False,1,"internal,corp"
+salesforce.com,Salesforce CRM,CRM,sanctioned,True,False,False,3,"salesforce,crm"
+dropbox.com,Dropbox,File Storage,unsanctioned,True,False,True,7,"dropbox"
+wetransfer.com,WeTransfer,File Transfer,unsanctioned,False,False,False,8,"wetransfer"
+asana.com,Asana,Project Management,unsanctioned,True,False,False,5,"asana"
+figma.com,Figma,Design Collaboration,conditionally_approved,True,False,False,4,"figma"
+new-project-tool.io,New Project Tool,Project Management,unknown,False,False,False,9,"projecttoolz"
+random-blog.com,Random Blog Site,Blog/News,irrelevant,False,False,False,2,"blog"
+zoom.us,Zoom,Communication,sanctioned,True,True,True,4,"zoom"
+office.com,Microsoft Office 365,Productivity,sanctioned,True,True,False,2,"microsoft,office"
+# --- Added Some More ---
+github.com,GitHub,Development,sanctioned,True,False,False,3,"github"
+slack.com,Slack,Communication,sanctioned,True,False,False,3,"slack"
+notion.so,Notion,Productivity/Docs,unsanctioned,True,False,False,6,"notion"
+canva.com,Canva,Design,unsanctioned,True,False,False,5,"canva"
+mailchimp.com,Mailchimp,Marketing Automation,conditionally_approved,True,False,True,6,"mailchimp"
+surveymonkey.com,SurveyMonkey,Surveys,unsanctioned,True,False,False,5,"surveymonkey"

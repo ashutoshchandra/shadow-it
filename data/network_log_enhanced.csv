@@ -1,0 +1,15 @@
+timestamp,user_id,source_ip,destination_domain,data_uploaded_mb,data_downloaded_mb
+2023-10-26T10:00:00Z,user1@example.com,192.168.1.10,corp-portal.com,1,5
+2023-10-26T10:01:00Z,user2@example.com,192.168.1.15,dropbox.com,50,10
+2023-10-26T10:02:00Z,user1@example.com,192.168.1.10,corp-portal.com,2,8
+2023-10-26T10:03:00Z,user3@example.com,192.168.1.20,new-project-tool.io,5,5
+2023-10-26T10:04:00Z,user2@example.com,192.168.1.15,dropbox.com,150,20
+2023-10-26T10:05:00Z,user1@example.com,192.168.1.10,wetransfer.com,100,5
+2023-10-26T10:06:00Z,user4@example.com,192.168.1.25,asana.com,5,15
+2023-10-26T10:07:00Z,user2@example.com,192.168.1.15,salesforce.com,1,10
+2023-10-26T10:08:00Z,user3@example.com,192.168.1.20,new-project-tool.io,10,10
+2023-10-26T10:09:00Z,user1@example.com,192.168.1.10,dropbox.com,30,5
+2023-10-26T10:10:00Z,user5@example.com,192.168.1.30,figma.com,20,50
+2023-10-26T10:11:00Z,user4@example.com,192.168.1.25,asana.com,5,10
+2023-10-26T10:12:00Z,user5@example.com,192.168.1.30,figma.com,30,60
+2023-10-26T10:13:00Z,user1@example.com,192.168.1.10,random-blog.com,0,1

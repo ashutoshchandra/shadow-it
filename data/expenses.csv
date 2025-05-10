@@ -1,0 +1,7 @@
+expense_id,user_id,vendor_name,amount,date,status
+EXP001,user2@example.com,Dropbox Inc.,15.00,2023-10-15,Approved
+EXP002,user4@example.com,Asana Subscription,25.00,2023-10-10,Approved
+EXP003,user3@example.com,ProjectToolz.io,50.00,2023-10-20,Pending Review
+EXP004,user5@example.com,Figma,12.00,2023-10-18,Approved
+EXP005,user1@example.com,Zoom Video,14.99,2023-10-05,Approved
+EXP006,user2@example.com,Microsoft (Office),9.99,2023-10-01,Approved

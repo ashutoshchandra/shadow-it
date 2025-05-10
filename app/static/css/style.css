@@ -1,0 +1,56 @@
+/* Make cards in rows consistent height if using d-flex/flex-fill */
+/* .row .card { height: 100%; } */ /* Uncomment if needed, added flex classes directly */
+
+.table-sm th, .table-sm td {
+    font-size: 0.875rem;
+     padding: 0.5rem; /* Slightly more padding */
+    vertical-align: middle; /* Align cell content vertically */
+ }
+
+/* Style for long user list in modal */
+.user-list-modal {
+     display: inline-block;
+     max-height: 60px; /* Limit height */
+    overflow-y: auto; /* Add scroll if needed */
+    word-break: break-word;
+     max-width: 95%;
+     font-size: 0.8em;
+     color: #6c757d;
+     padding: 2px 4px;
+     border: 1px solid #eee;
+     background-color: #f8f9fa;
+ }
+
+/* Table header sort icons */
+thead th {
+     cursor: pointer;
+     position: relative; /* For icon positioning */
+ }
+thead th i.fa-sort,
+ thead th i.fa-sort-up,
+thead th i.fa-sort-down {
+     position: absolute;
+     right: 8px; /* Adjust positioning */
+    top: 50%;
+     transform: translateY(-50%);
+     color: #999;
+ }
+ thead th:hover i {
+     color: #333;
+}
+
+ /* Navbar styling */
+ .navbar-brand { font-weight: 500; }
+ #last-updated { font-size: 0.8em; color: rgba(255, 255, 255, 0.7); }
+
+ /* Spinner inside modal */
+ #modal-spinner { padding: 40px 0; }
+
+ /* Resolution status icons padding */
+td[data-label="Resolution"] i {
+     font-size: 1.1em; /* Slightly larger icons */
+ }
+
+ /* Prevent card headers overlapping sticky table header */
+ .card .table-responsive { max-height: 60vh; } /* Add scroll to table */
+.table thead.sticky-top { top: 56px; } /* Account for navbar height */
